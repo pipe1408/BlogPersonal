@@ -25,16 +25,16 @@
             <div class="circulo" id="circ4"></div>
             <div class="circulo" id="circ5"></div>
             <div class="circulo" id="circ6"></div></div>
-        <div class="txt_j">Jardín 🌱</div>
-        <div class="txt_cp">Primaria 🎒</div>
-        <div class="txt_cb">Bachillerato 🏫</div>
-        <div class="txt_univ">Universidad 📚</div>
-        <div class="txt_pres">Presente 👨‍💻</div>
-        <div class="txt_futuro">Futuro✨</div>
+        <div class="txt_j" onclick="jumpJardin()">Jardín 🌱</div>
+        <div class="txt_cp" onclick="jumpPrimaria()">Primaria 🎒</div>
+        <div class="txt_cb" onclick="jumpBachillerato()">Bachillerato 🏫</div>
+        <div class="txt_univ" onclick="jumpUniversidad()">Universidad 📚</div>
+        <div class="txt_pres" onclick="jumpPresente()">Presente 👨‍💻</div>
+        <div class="txt_futuro" onclick="jumpFuturo()">Futuro✨</div>
     </div>
     <h3>...2031</h3>
     <hr>
-    <div class="text">
+    <div class="text" id="jrd">
         <h1>Jardín... 🌱</h1>
         <p>
             Nací el 14 de agosto de 2001 en Bogotá, soy hijo de dos abogados de la Universidad Externado de Colombia. A los
@@ -47,33 +47,60 @@
         </p>
     </div>
     <hr>
-    <div class="text">
+    <div class="text" id="prm">
         <h1>Primaria... 🏫</h1>
         <p>
             En 2007 empecé mi ciclo en primaria, ya entonces empezaron a enseñarnos habilidades de las más básicas en muchos campos. Fue en esta fase de mi vida que empecé a tener
             contacto con la tecnología, nos llevaban a las salas de computadores para hacer actividades en todas las materias, a la vez que para uno de mi cumpleaños recibí un GameBoy Advance, mi primera consola de videojuegos.
-
+            <br>
+            <br>
+            A partir de este punto no hubo vuelta atrás, mi interés por los videojuegos y los computadores se hizo muy grande.
         </p>
     </div>
     <hr>
-    <div class="text">
+    <div class="text" id="bach">
         <h1>Bachillerato... 🎒</h1>
-        <p></p>
+        <p>
+            Mis años de bachillerato fueron mis mayores años de exploración en la tecnología, me metí en el mundo de los juegos en línea y
+            empecé a participar activamente en comunidades de videojuegos, entre ellos, Garry's Mod, un juego del género sandbox que permite infinidad de posibilidades,
+            para crear modos de juego, personajes, armas y elementos del juego. Gracias a esto despertó mi interés por la programación,
+            modificando las líneas de código que apenas entendía de los archivos del juego que estaban en lenguaje LUA, y luego creando un servidor para que las personas pudieran divertirse.
+            También empecé a crear pequeños programas en C, como calculadoras y menús.
+            <br>
+            <br>
+            Tanta emoción, sumada a una lucha intensa con la matemática, me llevó a perder octavo de bachillerato. Pero superado ese obstaculo, pude graduarme en 2020, en plena pandemia.
+        </p>
     </div>
     <hr>
-    <div class="text">
+    <div class="text" id="uni">
         <h1>Universidad... 📚</h1>
-        <p></p>
+        <p>
+            A pesar de mi gran interés por la tecnología, entré a la carrera de Derecho en la Universidad de La Sabana, siguiendo el sueño de
+            ser investigador criminal, sin querer convertirme en un abogado litigante. Hice dos semestres en la carrera, pero definitivamente
+            no logré alinear mis intereses, por lo que decidí finalmente escoger el camino de lo que tanto me había llamado la atención durante
+            toda mi vida, la ingeniería informática.
+            <br>
+            <br>
+            Esta nueva carrera me permitió descubrir una nueva versión de mí mismo, con motivaciones totalmente diferentes. La matemática es el vivo ejemplo,
+            pues pude "resolver mis diferencias", y empecé a ver resultados muy positivos que jamás pensé obtener en materias que tampoco pensé ver.
+        </p>
     </div>
     <hr>
-    <div class="text">
+    <div class="text" id="pres">
         <h1>Presente... 👨‍💻</h1>
-        <p></p>
+        <p>Actualmente sigo estudiando Ingeniería Informática, y no podría estar más feliz de la decisión que tomé, ya llevo tres semestres y cada día
+            me gusta más. Los amigos que he podido conocer son excelentes personas, y compartimos muchos intereses entre todos,
+            en ellos encontré los asesores perfectos para uno de los logros más recientes que he tenido, y fue armar mi propio computador, con todas las capacidades
+            para jugar, programar, y estudiar.
+        </p>
     </div>
     <hr>
-    <div class="text">
+    <div class="text" id="fut">
         <h1>Futuro... ✨</h1>
-        <p></p>
+        <p>
+            Para mi futuro cercano, solo espero seguir aprendiendo mucho y mantener la misma motivación que llevo con el camino de vida que he tomado,
+            para eventualmente graduarme.
+        </p>
     </div>
     <hr>
 
@@ -243,5 +270,25 @@
             height: 810px;
         }
     </style>
+    <script>
+        function jumpJardin() {
+            document.getElementById("jrd").scrollIntoView()
+        }
+        function jumpPrimaria() {
+            document.getElementById("prm").scrollIntoView()
+        }
+        function jumpBachillerato() {
+            document.getElementById("bach").scrollIntoView()
+        }
+        function jumpUniversidad() {
+            document.getElementById("uni").scrollIntoView()
+        }
+        function jumpPresente() {
+            document.getElementById("pres").scrollIntoView()
+        }
+        function jumpFuturo() {
+            document.getElementById("fut").scrollIntoView()
+        }
+    </script>
 </body>
 </html>
