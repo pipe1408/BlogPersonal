@@ -1,0 +1,14 @@
+BLOG PERSONAL
+
+1. Jardín
+2. Colegio Primaria
+3. Colegio Bachillerato
+4. Pregrado
+4.1 Derecho
+4.2 Ingeniería Informática
+5. Especialización
+6. Maestría
+7. Doctorado
+
+Luis Felipe Ballesteros Gutiérrez
+Nací el 14 de agosto de 2001 en Bogotá, soy hijo de Jaime y Mariana, dos abogados de la Universidad Externado de Colombia.

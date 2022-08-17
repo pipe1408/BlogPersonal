@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LFBG: Blog Personal</title>
+</head>
+<body>
+    <div class="banner">
+        <img src="img/banner1280.png" alt="banner" id="banner">
+    </div>
+    <hr>
+    <div class="encabezado">
+        <p>Programación de Nuevas Tecnologías</p>
+        <h1>BLOG PERSONAL</h1>
+        <p>Luis Felipe Ballesteros Gutiérrez - 0000232393</p>
+    </div>
+    <hr>
+    <h1>Línea de tiempo</h1>
+    <h3>2001...</h3>
+    <div class="grid-container">
+        <div class="linea">
+            <div class="circulo" id="circ1">2001</div>
+            <div class="circulo" id="circ2">2022</div>
+            <div class="circulo" id="circ3"></div>
+            <div class="circulo" id="circ4"></div>
+            <div class="circulo" id="circ5"></div>
+            <div class="circulo" id="circ6"></div></div>
+        <div class="txt_j">Jardín 🌱</div>
+        <div class="txt_cp">Primaria 🎒</div>
+        <div class="txt_cb">Bachillerato 🏫</div>
+        <div class="txt_univ">Universidad 📚</div>
+        <div class="txt_pres">Presente 👨‍💻</div>
+        <div class="txt_futuro">Futuro✨</div>
+    </div>
+    <h3>...2031</h3>
+    <hr>
+    <div class="text">
+        <h1>Jardín... 🌱</h1>
+        <p>Nací el 14 de agosto de 2001 en Bogotá, soy hijo de dos abogados de la Universidad Externado de Colombia. A los
+            tres años me llevaron por primera vez al jardín infantil "Personitas", lugar del que tengo varios recuerdos de felicidad.
+            <br>
+            <br>
+            A los cinco años entré a Kinder en el Colegio Italiano Leonardo Da Vinci, sitio en el que me quedaría por los siguientes quince años.
+            Ya desde esa edad empezaron a inculcarme a mí y a mis compañeros los valores necesarios para ser una buena persona: la responsabilidad, el respeto, la verdad.
+            Además de, por supuesto, las primeras palabras en italiano.
+        </p>
+    </div>
+    <hr>
+    <div class="text">
+        <h1>Primaria... 🏫</h1>
+        <p>En 2007 empecé mi ciclo en primaria, ya entonces empezaron a enseñarnos habilidades de las más básicas en muchos campos. Fue en esta fase de mi vida que empecé a tener
+        contacto con la tecnología, nos llevaban a las salas de computadores para hacer actividades en todas las materias, a la vez que para uno de mi cumpleaños recibí un GameBoy Advance, mi primera consola de videojuegos.
+
+        </p>
+    </div>
+    <hr>
+    <div class="text">
+        <h1>Bachillerato... 🎒</h1>
+        <p></p>
+    </div>
+    <hr>
+    <div class="text">
+        <h1>Universidad... 📚</h1>
+        <p></p>
+    </div>
+    <hr>
+    <div class="text">
+        <h1>Presente... 👨‍💻</h1>
+        <p></p>
+    </div>
+    <hr>
+    <div class="text">
+        <h1>Futuro... ✨</h1>
+        <p></p>
+    </div>
+    <hr>
+
+
+    <style>
+        body {
+            background-color: #273136;
+            color: lightgray;
+            font-family: Bahnschrift,serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(83, 221, 184);
+        }
+
+        #banner {
+            display: flex;
+            margin: auto;
+            transition-duration: 0.1s;
+            scale: 0.95;
+        }
+        #banner:hover {
+            transition-duration: 0.3s;
+            scale: 1;
+        }
+
+        .encabezado {
+            margin: auto;
+            text-align: center;
+            height: auto;
+            line-height: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-areas:
+            'txt1 linea void1'
+            'void2 linea txt2'
+            'txt3 linea void3'
+            'void4 linea txt4'
+            'txt5 linea void5'
+            'void6 linea txt6'
+            ;
+
+        }
+
+        .linea {
+            display: grid;
+            margin: 0 auto auto auto;
+            justify-content: center;
+            background-color: #00d097;
+            width: 30px;
+            height: auto;
+            border-radius: 15px;
+            grid-area: linea;
+        }
+
+        .circulo {
+            margin: 50px;
+            font-size: 0;
+            background-color: white;
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            transition-duration: 0.4s;
+        }
+        .circulo:hover {
+            scale: 1.2;
+            transition-duration: 0.1s;
+        }
+
+        #circ1 {
+            margin-top: 0;
+        }
+
+        #circ6 {
+            margin-bottom: 0;
+        }
+
+        .txt_j {
+            margin: 0 auto auto auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #273136;
+            border-radius: 5px;
+            background-color: white;
+            grid-area: txt1;}
+        .txt_j:hover {
+            color: white;
+            background-color: #1f262a;
+        }
+        .txt_cp {
+            margin: 100px auto auto auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #273136;
+            border-radius: 5px;
+            background-color: white;
+            grid-area: txt2;}
+        .txt_cp:hover {
+            color: white;
+            background-color: #1f262a;
+        }
+        .txt_cb {
+            margin: 100px auto auto auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #273136;
+            border-radius: 5px;
+            background-color: white;
+            grid-area: txt3;}
+        .txt_cb:hover {
+            color: white;
+            background-color: #1f262a;
+        }
+        .txt_univ {
+            margin: 100px auto auto auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #273136;
+            border-radius: 5px;
+            background-color: white;
+            grid-area: txt4;}
+        .txt_univ:hover {
+            color: white;
+            background-color: #1f262a;
+        }
+        .txt_pres {
+            margin: 100px auto auto auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            background-color: #00d097;
+            border-radius: 5px;
+            grid-area: txt5;}
+        .txt_pres:hover {
+            color: #00d097;
+            background-color: #1f262a;
+        }
+        .txt_futuro {
+            margin: 100px auto auto auto;
+            width: 200px;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: white;
+            background-color: #2e9bc2;
+            border-radius: 5px;
+            grid-area: txt6;}
+        .txt_futuro:hover {
+            color: #2e9bc2;
+            background-color: #1f262a;
+        }
+
+        .text {
+            height: 810px;
+        }
+    </style>
+</body>
+</html>
