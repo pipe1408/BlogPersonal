@@ -10,27 +10,111 @@
       <h1>Comentario de Ingeniería</h1>
     </div>
     <div class="menu">
-      <div class="boton" id="bio">Biografías</div>
-      <div class="boton" id="com">Comentario</div>
+      <div class="boton" id="bio" onclick="jumpBio()">Biografías</div>
+      <div class="boton" id="com" onclick="jumpCom()">Comentario</div>
     </div>
-    <div class="biografias">
+    <div class="biografias" id="div_bio">
       <h2 id="titulo_bio">Biografías</h2>
       <div class="turing">
         <h3>Alan Turing</h3>
-        <img src="img/Alan_Turing_photo.jpg" alt="" width="240" height="300">
+          <img src="img/Alan_Turing_photo.jpg" alt="" width="240" height="300">
+          <ul>
+              <li><b>Nacimiento:</b> 23 de junio de 1912</li>
+              <li><b>Nacionalidad:</b> Británico</li>
+              <li><b>Fallecimiento:</b> 7 de junio de 1954</li>
+          </ul>
+          <p id="at">Alan Turing nació en Londres, Reino Unido, en 1912, es hijo de una familia acomodada. La época que vivió Turing fue
+          marcada por las dos guerras mundiales, en la que en varias ocasiones, por las acciones de una única persona,
+          se definió el futuro de la humanidad y la historia que hoy se lee en los libros. Turing es una de estas
+          personas que definió el rumbo de la historia, pues el mundo en que viviríamos sería totalmente distinto de
+          no ser por él.<br><br>
+          El principal logro de este personaje fue crear una máquina capaz de descifrar el código Enigma, a través del
+          cual el ejército nazi comunicaba sus planes y por el cual el ejército aliado se encontraba en jaque a punto de
+          perder la Segunda Guerra Mundial. Fue gracias a esta invención que la duración de la guerra se redujo varios años,
+          y muy probablemente la que le dio la ventaja que los aliados necesitaban para ganarla. <br> <br>
+          A pesar de lo anterior, el pensamiento y forma de ser de Turing, se vieron marcados por una falta de comprensión
+          por parte de las demás personas que lo consideraban extraño y engreído, además de ser perseguido por su orientación
+          sexual, que se consideraba como un crímen de indecencia para ese momento.</p>
       </div>
       <div class="divider" id="div1"></div>
       <div class="johnson">
           <h3>Katherine Johnson</h3>
           <img src="img/Katherine-Johnson.jpg" alt="" width="240" height="300">
+          <ul>
+              <li><b>Nacimiento:</b> 26 de agosto de 1918</li>
+              <li><b>Nacionalidad:</b> Estadounidense</li>
+              <li><b>Fallecimiento:</b> 24 de febrero de 2020</li>
+          </ul>
+          <p id="kj">
+              Katherine Johnson es una de las mujeres más destacadas en la historia de la matemática y la ingeniería,
+              nació en White Sulphur Springs, West Virginia, EE.UU., en el año 1918. Su capacidad de aprendizaje era
+              extremadamente veloz, lo que le permitió entrar a una universidad para gente de color una muy temprana
+              edad. La habilidad con las matemáticas la llevó a trabajar en la actual NASA como computadora, y no tardó
+              mucho en llamar la atención de uno de los directores de la misión que quería llevar al primer hombre al
+              espacio, gracias a lo que empezó a trabajar de la mano de los más brillantes ingenieros de esa agencia.
+              <br><br>
+              Este nuevo paso representó un desafío para Johnson, no porque los cálculos fueran difíciles, sino por su
+              condición de mujer de color, pues ella no estaba acostumbrada a hacer, e incluso supervisar, el mismo trabajo
+              que solo hacían hombres blancos, y pasaba lo mismo con sus compañeros, pues ellos tampoco estaban acostumbrados
+              a esa situación.<br><br>
+              Los cálculos de Katherine, sin embargo, fueron fundamentales para la realización de esta misión, llevándola
+              a participar en otros proyectos de exploración espacial, como el proyecto Apolo, para los que también resultó
+              indispensable.
+          </p>
       </div>
       <div class="divider" id="div2"></div>
       <div class="berners-lee">
           <h3>Tim Berners-Lee</h3>
           <img src="img/Tim-Berners-Lee-2005.png" alt="" width="240" height="300">
+          <ul>
+              <li><b>Nacimiento:</b> 8 de junio de 1955</li>
+              <li><b>Nacionalidad:</b> Británico</li>
+          </ul>
+          <p id="tbl">Tim Berners-Lee nació en 1955 en Londres, Reino Unido. Estudió y se licenció en física en la universidad de
+          Oxford. Habiendo obtenido este título y siendo hijo de científicos, no le costó llegar pronto a trabajar en
+          el CERN, centro donde se estudia la física de las partículas, y que hoy se dedica a la investigación nuclear.
+          Allí nació, a finales de los 80' e inicios de los 90' su idea de crear un programa que pudiera crear asociaciones entre diferentes computadoras, y que así
+          pudieran intercambiar información entre ellas. <br><br>
+          Fue así como Berners-Lee empezó a definir el esquema más básico de lo que hoy conocemos como el Internet. Siendo
+          él el que escribió y definió el HTML para dar estructura a las páginas, las URL para dar una ubicación a una computadora,
+          y el HTTPS para que entre ellas se pudieran transmitir toda la información. Este proyecto tuvo como nombre
+          la World Wide Web, y es lo que hoy en día permite a todos los seres humanos estar interconectados, independientemente
+          del lugar donde se encuentren.<br><br>
+          Berners-Lee ha recibicdo numerosos premios por su invención, y hoy en día sigue activo y dedicado a mejorarla
+          junto a gigantes de la tecnología, desde el World Wide Web Consortium, la organización que crea normas técnicas
+          para la navegación por Internet.</p>
       </div>
     </div>
-    <div class="comentario">
+    <div class="comentario" id="div_com">
+        <h2>Comentario</h2>
+        <p id="p_com">
+            Las biografías de los tres personajes: Alan Turing, Katherine Johnson y Tim Berners-Lee, reflejan la vida de
+            tres personajes sumamente importantes para el mundo de la ingeniería. Sin duda, el factor común es que han
+            hecho un aporte que ha definido cómo funciona la labor del ingeniero, los instrumentos en los que se apoya e
+            incluso su ética fundamental para la práctica de su profesión. <br><br>
+            Iniciando por Alan Turing, la dimensión de su aporte a la ingeniería es inimaginable, como se puede ver en la
+            película "Código Enigma", nadie dudó de sus capacidades, pero a diferencia de otras mentes brillantes, que
+            seguían la instrucción que recibían para solucionar un problema, Turing fue más allá, buscando alternativas distintas.
+            A falta de herramientas, creó la que se necesitaba. El potencial de esta compleja herramienta resultó ser inmenso,
+            pues es ahora una de las mejores amigas del ingeniero, la computadora abrió un mundo totalmente nuevo y sin ella la humanidad
+            jamás habría llegad el punto en que se encuentra hoy.<br><br>
+            Turing tiene un aporte adicional que es también de gran importancia, y es la parte humana del ingeniero, él fue
+            el vivo ejemplo de que a veces el ingeniero puede ser incomprendido en sus tantos procesos mentales, una de las
+            razones de ser incomprendido era su orientación sexual, por lo que se le discriminaba, similar a como sucedió
+            con Katherine Johnson. Esta mujer vivía en una sociedad que discriminaba a las personas por su color de piel
+            y, de paso, por su género, ella junto con Turing demuestran que los seres humanos, en nuestras diferencias,
+            nos hemos perdido muchísimas oportunidades de conocer mentes brillantes a lo largo de toda la historia, por
+            el solo hecho de marginar y hacer callar las ideas de las personas. <br><br>
+            Por su lado, Tim Berners-Lee logró conectar un mundo entero, además de las computadoras, el Internet es
+            también lo que define la forma de funcionar de nuestra sociedad, la forma en que funcionan los hogares, las empresas,
+            las instituciones educativas, el ocio y básicamente cualquier aspecto de la vida del hombre, creó un espacio
+            para compartir el conocimiento de todos, y acelerar el progreso de todos. <br><br>
+            Hay un aporte final que comparten estas tres mentes brillantes y es que ha sido el mismo ingenio del ser humano
+            el que nos ha traído a donde estamos hoy, siempre hemos logrado encontrar soluciones a los problemas del día a día,
+            pero para poder desbloquearlo es necesario no quedarse quieto esperando a que los problemas se resuelvan solos,
+            de no ser por las personas que han tomado esos grandes riesgos a lo largo de la historia, probablemente seguiríamos
+            por ahí, dando vueltas en busca de alimento con un bastón en la mano.
+        </p>
     </div>
     <style>
       body {
@@ -53,6 +137,12 @@
           background-color: #2e9bc2;
           border-radius: 50px;
           margin: auto;
+          transition-duration: 0.1s;
+      }
+      .boton:hover {
+          color: #2e9bc2;
+          background-color: white;
+          transition-duration: 0.1s;
       }
       #bio {
           margin-right: 20px;
@@ -63,9 +153,11 @@
       .biografias {
           margin: 50px auto auto;
           display: grid;
-          width: 70%;
+          width: 75%;
           background-color: white;
           color: black;
+          border-radius: 10px;
+          justify-items: center;
           grid-template-areas:
                   'titulo titulo titulo titulo titulo'
                   'turing div1 johnson div2 berners-lee';
@@ -88,12 +180,45 @@
       .turing {
         grid-area: turing;
       }
+      #at {
+          margin-right: 20px;
+          margin-left: 20px;
+      }
       .johnson {
         grid-area: johnson;
+      }
+      #kj {
+          margin-right: 20px;
+          margin-left: 20px;
       }
       .berners-lee {
         grid-area: berners-lee;
       }
+      #tbl {
+          margin-right: 20px;
+          margin-left: 20px;
+      }
+      .comentario {
+          margin: 50px auto auto;
+          display: grid;
+          width: 75%;
+          background-color: lightgray;
+          color: black;
+          border-radius: 10px;
+      }
+      #p_com {
+          margin-left: 50px;
+          margin-right: 50px;
+      }
+
     </style>
+    <script>
+        function jumpBio() {
+            document.getElementById("div_bio").scrollIntoView()
+        }
+        function jumpCom() {
+            document.getElementById("div_com").scrollIntoView()
+        }
+    </script>
 </body>
 </html>
