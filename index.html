@@ -2,296 +2,222 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>LFBG: Blog Personal</title>
+    <title>Comentario de Ingeniería</title>
 </head>
 <body>
-    <div class="banner">
-        <img src="img/banner1280.png" alt="banner" id="banner">
-    </div>
-    <hr>
     <div class="encabezado">
-        <p>Programación de Nuevas Tecnologías</p>
-        <h1>BLOG PERSONAL</h1>
-        <p>Luis Felipe Ballesteros Gutiérrez - 0000232393</p>
+      <h2>Felipe Ballesteros - Programación de Nuevas Tecnologías</h2>
+      <h1>Comentario de Ingeniería</h1>
     </div>
-    <hr>
-    <h1>Línea de tiempo</h1>
-    <h3>2001...</h3>
-    <div class="grid-container">
-        <div class="linea">
-            <div class="circulo" id="circ1">2001</div>
-            <div class="circulo" id="circ2">2022</div>
-            <div class="circulo" id="circ3"></div>
-            <div class="circulo" id="circ4"></div>
-            <div class="circulo" id="circ5"></div>
-            <div class="circulo" id="circ6"></div></div>
-        <div class="txt_j" onclick="jumpJardin()">Jardín 🌱</div>
-        <div class="txt_cp" onclick="jumpPrimaria()">Primaria 🎒</div>
-        <div class="txt_cb" onclick="jumpBachillerato()">Bachillerato 🏫</div>
-        <div class="txt_univ" onclick="jumpUniversidad()">Universidad 📚</div>
-        <div class="txt_pres" onclick="jumpPresente()">Presente 👨‍💻</div>
-        <div class="txt_futuro" onclick="jumpFuturo()">Futuro✨</div>
+    <div class="menu">
+      <div class="boton" id="bio" onclick="jumpBio()">Biografías</div>
+      <div class="boton" id="com" onclick="jumpCom()">Comentario</div>
     </div>
-    <h3>...2031</h3>
-    <hr>
-    <div class="text" id="jrd">
-        <h1>Jardín... 🌱</h1>
-        <p>
-            Nací el 14 de agosto de 2001 en Bogotá, soy hijo de dos abogados de la Universidad Externado de Colombia. A los
-            tres años me llevaron por primera vez al jardín infantil "Personitas", lugar del que tengo varios recuerdos de felicidad.
-            <br>
-            <br>
-            A los cinco años entré a Kinder en el Colegio Italiano Leonardo Da Vinci, sitio en el que me quedaría por los siguientes quince años.
-            Ya desde esa edad empezaron a inculcarme a mí y a mis compañeros los valores necesarios para ser una buena persona: la responsabilidad, el respeto, la verdad.
-            Además de, por supuesto, las primeras palabras en italiano.
+    <div class="biografias" id="div_bio">
+      <h2 id="titulo_bio">Biografías</h2>
+      <div class="turing">
+        <h3>Alan Turing</h3>
+          <img src="img/Alan_Turing_photo.jpg" alt="" width="240" height="300">
+          <ul>
+              <li><b>Nacimiento:</b> 23 de junio de 1912</li>
+              <li><b>Nacionalidad:</b> Británico</li>
+              <li><b>Fallecimiento:</b> 7 de junio de 1954</li>
+          </ul>
+          <p id="at">Alan Turing nació en Londres, Reino Unido, en 1912, es hijo de una familia acomodada. La época que vivió Turing fue
+          marcada por las dos guerras mundiales, en la que en varias ocasiones, por las acciones de una única persona,
+          se definió el futuro de la humanidad y la historia que hoy se lee en los libros. Turing es una de estas
+          personas que definió el rumbo de la historia, pues el mundo en que viviríamos sería totalmente distinto de
+          no ser por él.<br><br>
+          El principal logro de este personaje fue crear una máquina capaz de descifrar el código Enigma, a través del
+          cual el ejército nazi comunicaba sus planes y por el cual el ejército aliado se encontraba en jaque a punto de
+          perder la Segunda Guerra Mundial. Fue gracias a esta invención que la duración de la guerra se redujo varios años,
+          y muy probablemente la que le dio la ventaja que los aliados necesitaban para ganarla. <br> <br>
+          A pesar de lo anterior, el pensamiento y forma de ser de Turing, se vieron marcados por una falta de comprensión
+          por parte de las demás personas que lo consideraban extraño y engreído, además de ser perseguido por su orientación
+          sexual, que se consideraba como un crímen de indecencia para ese momento.</p>
+      </div>
+      <div class="divider" id="div1"></div>
+      <div class="johnson">
+          <h3>Katherine Johnson</h3>
+          <img src="img/Katherine-Johnson.jpg" alt="" width="240" height="300">
+          <ul>
+              <li><b>Nacimiento:</b> 26 de agosto de 1918</li>
+              <li><b>Nacionalidad:</b> Estadounidense</li>
+              <li><b>Fallecimiento:</b> 24 de febrero de 2020</li>
+          </ul>
+          <p id="kj">
+              Katherine Johnson es una de las mujeres más destacadas en la historia de la matemática y la ingeniería,
+              nació en White Sulphur Springs, West Virginia, EE.UU., en el año 1918. Su capacidad de aprendizaje era
+              extremadamente veloz, lo que le permitió entrar a una universidad para gente de color una muy temprana
+              edad. La habilidad con las matemáticas la llevó a trabajar en la actual NASA como computadora, y no tardó
+              mucho en llamar la atención de uno de los directores de la misión que quería llevar al primer hombre al
+              espacio, gracias a lo que empezó a trabajar de la mano de los más brillantes ingenieros de esa agencia.
+              <br><br>
+              Este nuevo paso representó un desafío para Johnson, no porque los cálculos fueran difíciles, sino por su
+              condición de mujer de color, pues ella no estaba acostumbrada a hacer, e incluso supervisar, el mismo trabajo
+              que solo hacían hombres blancos, y pasaba lo mismo con sus compañeros, pues ellos tampoco estaban acostumbrados
+              a esa situación.<br><br>
+              Los cálculos de Katherine, sin embargo, fueron fundamentales para la realización de esta misión, llevándola
+              a participar en otros proyectos de exploración espacial, como el proyecto Apolo, para los que también resultó
+              indispensable.
+          </p>
+      </div>
+      <div class="divider" id="div2"></div>
+      <div class="berners-lee">
+          <h3>Tim Berners-Lee</h3>
+          <img src="img/Tim-Berners-Lee-2005.png" alt="" width="240" height="300">
+          <ul>
+              <li><b>Nacimiento:</b> 8 de junio de 1955</li>
+              <li><b>Nacionalidad:</b> Británico</li>
+          </ul>
+          <p id="tbl">Tim Berners-Lee nació en 1955 en Londres, Reino Unido. Estudió y se licenció en física en la universidad de
+          Oxford. Habiendo obtenido este título y siendo hijo de científicos, no le costó llegar pronto a trabajar en
+          el CERN, centro donde se estudia la física de las partículas, y que hoy se dedica a la investigación nuclear.
+          Allí nació, a finales de los 80' e inicios de los 90' su idea de crear un programa que pudiera crear asociaciones entre diferentes computadoras, y que así
+          pudieran intercambiar información entre ellas. <br><br>
+          Fue así como Berners-Lee empezó a definir el esquema más básico de lo que hoy conocemos como el Internet. Siendo
+          él el que escribió y definió el HTML para dar estructura a las páginas, las URL para dar una ubicación a una computadora,
+          y el HTTPS para que entre ellas se pudieran transmitir toda la información. Este proyecto tuvo como nombre
+          la World Wide Web, y es lo que hoy en día permite a todos los seres humanos estar interconectados, independientemente
+          del lugar donde se encuentren.<br><br>
+          Berners-Lee ha recibicdo numerosos premios por su invención, y hoy en día sigue activo y dedicado a mejorarla
+          junto a gigantes de la tecnología, desde el World Wide Web Consortium, la organización que crea normas técnicas
+          para la navegación por Internet.</p>
+      </div>
+    </div>
+    <div class="comentario" id="div_com">
+        <h2>Comentario</h2>
+        <p id="p_com">
+            Las biografías de los tres personajes: Alan Turing, Katherine Johnson y Tim Berners-Lee, reflejan la vida de
+            tres personajes sumamente importantes para el mundo de la ingeniería. Sin duda, el factor común es que han
+            hecho un aporte que ha definido cómo funciona la labor del ingeniero, los instrumentos en los que se apoya e
+            incluso su ética fundamental para la práctica de su profesión. <br><br>
+            Iniciando por Alan Turing, la dimensión de su aporte a la ingeniería es inimaginable, como se puede ver en la
+            película "Código Enigma", nadie dudó de sus capacidades, pero a diferencia de otras mentes brillantes, que
+            seguían la instrucción que recibían para solucionar un problema, Turing fue más allá, buscando alternativas distintas.
+            A falta de herramientas, creó la que se necesitaba. El potencial de esta compleja herramienta resultó ser inmenso,
+            pues es ahora una de las mejores amigas del ingeniero, la computadora abrió un mundo totalmente nuevo y sin ella la humanidad
+            jamás habría llegad el punto en que se encuentra hoy.<br><br>
+            Turing tiene un aporte adicional que es también de gran importancia, y es la parte humana del ingeniero, él fue
+            el vivo ejemplo de que a veces el ingeniero puede ser incomprendido en sus tantos procesos mentales, una de las
+            razones de ser incomprendido era su orientación sexual, por lo que se le discriminaba, similar a como sucedió
+            con Katherine Johnson. Esta mujer vivía en una sociedad que discriminaba a las personas por su color de piel
+            y, de paso, por su género, ella junto con Turing demuestran que los seres humanos, en nuestras diferencias,
+            nos hemos perdido muchísimas oportunidades de conocer mentes brillantes a lo largo de toda la historia, por
+            el solo hecho de marginar y hacer callar las ideas de las personas. <br><br>
+            Por su lado, Tim Berners-Lee logró conectar un mundo entero, además de las computadoras, el Internet es
+            también lo que define la forma de funcionar de nuestra sociedad, la forma en que funcionan los hogares, las empresas,
+            las instituciones educativas, el ocio y básicamente cualquier aspecto de la vida del hombre, creó un espacio
+            para compartir el conocimiento de todos, y acelerar el progreso de todos. <br><br>
+            Hay un aporte final que comparten estas tres mentes brillantes y es que ha sido el mismo ingenio del ser humano
+            el que nos ha traído a donde estamos hoy, siempre hemos logrado encontrar soluciones a los problemas del día a día,
+            pero para poder desbloquearlo es necesario no quedarse quieto esperando a que los problemas se resuelvan solos,
+            de no ser por las personas que han tomado esos grandes riesgos a lo largo de la historia, probablemente seguiríamos
+            por ahí, dando vueltas en busca de alimento con un bastón en la mano.
         </p>
     </div>
-    <hr>
-    <div class="text" id="prm">
-        <h1>Primaria... 🏫</h1>
-        <p>
-            En 2007 empecé mi ciclo en primaria, ya entonces empezaron a enseñarnos habilidades de las más básicas en muchos campos. Fue en esta fase de mi vida que empecé a tener
-            contacto con la tecnología, nos llevaban a las salas de computadores para hacer actividades en todas las materias, a la vez que para uno de mi cumpleaños recibí un GameBoy Advance, mi primera consola de videojuegos.
-            <br>
-            <br>
-            A partir de este punto no hubo vuelta atrás, mi interés por los videojuegos y los computadores se hizo muy grande.
-        </p>
-    </div>
-    <hr>
-    <div class="text" id="bach">
-        <h1>Bachillerato... 🎒</h1>
-        <p>
-            Mis años de bachillerato fueron mis mayores años de exploración en la tecnología, me metí en el mundo de los juegos en línea y
-            empecé a participar activamente en comunidades de videojuegos, entre ellos, Garry's Mod, un juego del género sandbox que permite infinidad de posibilidades,
-            para crear modos de juego, personajes, armas y elementos del juego. Gracias a esto despertó mi interés por la programación,
-            modificando las líneas de código que apenas entendía de los archivos del juego que estaban en lenguaje LUA, y luego creando un servidor para que las personas pudieran divertirse.
-            También empecé a crear pequeños programas en C, como calculadoras y menús.
-            <br>
-            <br>
-            Tanta emoción, sumada a una lucha intensa con la matemática, me llevó a perder octavo de bachillerato. Pero superado ese obstaculo, pude graduarme en 2020, en plena pandemia.
-        </p>
-    </div>
-    <hr>
-    <div class="text" id="uni">
-        <h1>Universidad... 📚</h1>
-        <p>
-            A pesar de mi gran interés por la tecnología, entré a la carrera de Derecho en la Universidad de La Sabana, siguiendo el sueño de
-            ser investigador criminal, sin querer convertirme en un abogado litigante. Hice dos semestres en la carrera, pero definitivamente
-            no logré alinear mis intereses, por lo que decidí finalmente escoger el camino de lo que tanto me había llamado la atención durante
-            toda mi vida, la ingeniería informática.
-            <br>
-            <br>
-            Esta nueva carrera me permitió descubrir una nueva versión de mí mismo, con motivaciones totalmente diferentes. La matemática es el vivo ejemplo,
-            pues pude "resolver mis diferencias", y empecé a ver resultados muy positivos que jamás pensé obtener en materias que tampoco pensé ver.
-        </p>
-    </div>
-    <hr>
-    <div class="text" id="pres">
-        <h1>Presente... 👨‍💻</h1>
-        <p>Actualmente sigo estudiando Ingeniería Informática, y no podría estar más feliz de la decisión que tomé, ya llevo tres semestres y cada día
-            me gusta más. Los amigos que he podido conocer son excelentes personas, y compartimos muchos intereses entre todos,
-            en ellos encontré los asesores perfectos para uno de los logros más recientes que he tenido, y fue armar mi propio computador, con todas las capacidades
-            para jugar, programar, y estudiar.
-        </p>
-    </div>
-    <hr>
-    <div class="text" id="fut">
-        <h1>Futuro... ✨</h1>
-        <p>
-            Para mi futuro cercano, solo espero seguir aprendiendo mucho y mantener la misma motivación que llevo con el camino de vida que he tomado,
-            para eventualmente graduarme. Sé que me interesa el tema de manejo de servidores, pero sigo viendo qué más cosas puedo ir descubriendo en esta carrera.
-            Participar en proyectos de videojuegos seguro que también me gustaría mucho.
-            <br>
-            <br>
-            Por ahora tengo seguro que quiero complementar mis estudios por fuera del país después de graduarme, así que estoy atento a futuras oportunidades que puedan surgir.
-        </p>
-    </div>
-    <hr>
-
-
     <style>
-        body {
-            background-color: #273136;
-            color: lightgray;
-            font-family: Bahnschrift,serif;
-            text-align: center;
-        }
+      body {
+          font-family: Bahnschrift,serif;
+          text-align: center;
+          background-color: rgb(60, 77, 108);
+          color: white;
+          background-image: url("img/star-sky-space-stars-background-glitter-particles_160081-317.png");
+      }
+      .menu {
+          display: flex;
+          height: 70px;
+          background-color: #0f323d;
+      }
+      .boton {
+          width: 150px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          background-color: #2e9bc2;
+          border-radius: 50px;
+          margin: auto;
+          transition-duration: 0.1s;
+      }
+      .boton:hover {
+          color: #2e9bc2;
+          background-color: white;
+          transition-duration: 0.1s;
+      }
+      #bio {
+          margin-right: 20px;
+      }
+      #com {
+          margin-left: 20px;
+      }
+      .biografias {
+          margin: 50px auto auto;
+          display: grid;
+          width: 75%;
+          background-color: white;
+          color: black;
+          border-radius: 10px;
+          justify-items: center;
+          grid-template-areas:
+                  'titulo titulo titulo titulo titulo'
+                  'turing div1 johnson div2 berners-lee';
+      }
+      #titulo_bio {
+        grid-area: titulo;
+      }
+      .divider {
+        width: 1px;
+        height: 100%;
+        background-color: black;
+        margin: auto;
+      }
+      #div1 {
+        grid-area: div1;
+      }
+      #div2 {
+        grid-area: div2;
+      }
+      .turing {
+        grid-area: turing;
+      }
+      #at {
+          margin-right: 20px;
+          margin-left: 20px;
+      }
+      .johnson {
+        grid-area: johnson;
+      }
+      #kj {
+          margin-right: 20px;
+          margin-left: 20px;
+      }
+      .berners-lee {
+        grid-area: berners-lee;
+      }
+      #tbl {
+          margin-right: 20px;
+          margin-left: 20px;
+      }
+      .comentario {
+          margin: 50px auto auto;
+          display: grid;
+          width: 75%;
+          background-color: lightgray;
+          color: black;
+          border-radius: 10px;
+      }
+      #p_com {
+          margin-left: 50px;
+          margin-right: 50px;
+      }
 
-        h1 {
-            color: rgb(83, 221, 184);
-        }
-
-        #banner {
-            display: flex;
-            margin: auto;
-            transition-duration: 0.1s;
-            scale: 0.95;
-        }
-        #banner:hover {
-            transition-duration: 0.3s;
-            scale: 1;
-        }
-
-        .encabezado {
-            margin: auto;
-            text-align: center;
-            height: auto;
-            line-height: 20px;
-        }
-
-        .grid-container {
-            display: grid;
-            grid-template-areas:
-            'txt1 linea void1'
-            'void2 linea txt2'
-            'txt3 linea void3'
-            'void4 linea txt4'
-            'txt5 linea void5'
-            'void6 linea txt6'
-            ;
-
-        }
-
-        .linea {
-            display: grid;
-            margin: 0 auto auto auto;
-            justify-content: center;
-            background-color: #00d097;
-            width: 30px;
-            height: auto;
-            border-radius: 15px;
-            grid-area: linea;
-        }
-
-        .circulo {
-            margin: 50px;
-            font-size: 0;
-            background-color: white;
-            height: 30px;
-            width: 30px;
-            border-radius: 50%;
-            transition-duration: 0.4s;
-        }
-        .circulo:hover {
-            scale: 1.2;
-            transition-duration: 0.1s;
-        }
-
-        #circ1 {
-            margin-top: 0;
-        }
-
-        #circ6 {
-            margin-bottom: 0;
-        }
-
-        .txt_j {
-            margin: 0 auto auto auto;
-            width: 200px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            color: #273136;
-            border-radius: 5px;
-            background-color: white;
-            grid-area: txt1;}
-        .txt_j:hover {
-            color: white;
-            background-color: #1f262a;
-        }
-        .txt_cp {
-            margin: 100px auto auto auto;
-            width: 200px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            color: #273136;
-            border-radius: 5px;
-            background-color: white;
-            grid-area: txt2;}
-        .txt_cp:hover {
-            color: white;
-            background-color: #1f262a;
-        }
-        .txt_cb {
-            margin: 100px auto auto auto;
-            width: 200px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            color: #273136;
-            border-radius: 5px;
-            background-color: white;
-            grid-area: txt3;}
-        .txt_cb:hover {
-            color: white;
-            background-color: #1f262a;
-        }
-        .txt_univ {
-            margin: 100px auto auto auto;
-            width: 200px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            color: #273136;
-            border-radius: 5px;
-            background-color: white;
-            grid-area: txt4;}
-        .txt_univ:hover {
-            color: white;
-            background-color: #1f262a;
-        }
-        .txt_pres {
-            margin: 100px auto auto auto;
-            width: 200px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            color: white;
-            background-color: #00d097;
-            border-radius: 5px;
-            grid-area: txt5;}
-        .txt_pres:hover {
-            color: #00d097;
-            background-color: #1f262a;
-        }
-        .txt_futuro {
-            margin: 100px auto auto auto;
-            width: 200px;
-            height: 30px;
-            text-align: center;
-            line-height: 30px;
-            color: white;
-            background-color: #2e9bc2;
-            border-radius: 5px;
-            grid-area: txt6;}
-        .txt_futuro:hover {
-            color: #2e9bc2;
-            background-color: #1f262a;
-        }
-
-        .text {
-            height: 810px;
-        }
     </style>
     <script>
-        function jumpJardin() {
-            document.getElementById("jrd").scrollIntoView()
+        function jumpBio() {
+            document.getElementById("div_bio").scrollIntoView()
         }
-        function jumpPrimaria() {
-            document.getElementById("prm").scrollIntoView()
-        }
-        function jumpBachillerato() {
-            document.getElementById("bach").scrollIntoView()
-        }
-        function jumpUniversidad() {
-            document.getElementById("uni").scrollIntoView()
-        }
-        function jumpPresente() {
-            document.getElementById("pres").scrollIntoView()
-        }
-        function jumpFuturo() {
-            document.getElementById("fut").scrollIntoView()
+        function jumpCom() {
+            document.getElementById("div_com").scrollIntoView()
         }
     </script>
 </body>
