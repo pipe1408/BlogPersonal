@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comentario de Ingeniería</title>
+</head>
+<body>
+    <div class="encabezado">
+      <h2>Felipe Ballesteros - Programación de Nuevas Tecnologías</h2>
+      <h1>Comentario de Ingeniería</h1>
+    </div>
+    <div class="menu">
+      <div class="boton" id="bio">Biografías</div>
+      <div class="boton" id="com">Comentario</div>
+    </div>
+    <div class="biografias">
+      <h2 id="titulo_bio">Biografías</h2>
+      <div class="turing">
+        <h3>Alan Turing</h3>
+        <img src="img/Alan_Turing_photo.jpg" alt="" width="240" height="300">
+      </div>
+      <div class="divider" id="div1"></div>
+      <div class="johnson">
+          <h3>Katherine Johnson</h3>
+          <img src="img/Katherine-Johnson.jpg" alt="" width="240" height="300">
+      </div>
+      <div class="divider" id="div2"></div>
+      <div class="berners-lee">
+          <h3>Tim Berners-Lee</h3>
+          <img src="img/Tim-Berners-Lee-2005.png" alt="" width="240" height="300">
+      </div>
+    </div>
+    <div class="comentario">
+    </div>
+    <style>
+      body {
+          font-family: Bahnschrift,serif;
+          text-align: center;
+          background-color: rgb(60, 77, 108);
+          color: white;
+          background-image: url("img/star-sky-space-stars-background-glitter-particles_160081-317.png");
+      }
+      .menu {
+          display: flex;
+          height: 70px;
+          background-color: #0f323d;
+      }
+      .boton {
+          width: 150px;
+          height: 50px;
+          text-align: center;
+          line-height: 50px;
+          background-color: #2e9bc2;
+          border-radius: 50px;
+          margin: auto;
+      }
+      #bio {
+          margin-right: 20px;
+      }
+      #com {
+          margin-left: 20px;
+      }
+      .biografias {
+          margin: 50px auto auto;
+          display: grid;
+          width: 70%;
+          background-color: white;
+          color: black;
+          grid-template-areas:
+                  'titulo titulo titulo titulo titulo'
+                  'turing div1 johnson div2 berners-lee';
+      }
+      #titulo_bio {
+        grid-area: titulo;
+      }
+      .divider {
+        width: 1px;
+        height: 100%;
+        background-color: black;
+        margin: auto;
+      }
+      #div1 {
+        grid-area: div1;
+      }
+      #div2 {
+        grid-area: div2;
+      }
+      .turing {
+        grid-area: turing;
+      }
+      .johnson {
+        grid-area: johnson;
+      }
+      .berners-lee {
+        grid-area: berners-lee;
+      }
+    </style>
+</body>
+</html>
